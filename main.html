@@ -1,8 +1,92 @@
 <html>
   <head>
     <title>Facebook Login</title>
+	  <style>
+
+		  body{
+			  background-color:#f6f6f6;
+			  display:flex;
+			  justify-content:center;
+			  align-items:center;
+			  height:100vh;
+		  }
+
+		  *{
+			  padding:0;
+			  margin:0;
+			  box-sizing:border-box;
+		  }
+
+		  .container{
+			  display:flex;
+			  justify-content:center;
+			  gap:30px;
+			  padding:30px;
+		  }
+		  
+		  .left{
+			  display:inline-block;
+			  flex-direction:column;
+			  width:450px;
+			  margin-top:70px;
+		  }
+
+		  form{
+			  width:300px;
+			  background-color:white;
+			  padding:20px;
+			  border-radius:5px;
+			  box-shadow:0 0 10px #ccc;
+		      display:flex;
+			  flex-direction:column;
+			  gap:10px;
+		  }
+
+		  input{
+			  width:300px;
+			  padding:10px;
+			  border-radius:5px;
+			  border:1px solid #ccc
+		  }
+
+		  button{
+			  padding:10px 20px;
+			  border-radius:5px;
+			  background-color:#1877f2;
+			  color:white;
+			  border:none;
+		  }
+
+		  a{
+			  color:#1877f2;
+			  text-decoration:none;
+		  }
+
+		  .signup{
+			  margin-top:20px;
+			  width:100%;
+			  background-color:#42b72a;
+			  border:none;
+		  }
+		  
+	  </style>
   </head>
   <body>
     <!-- Write your code here -->
+	  <div class="container">
+		  <div class="left">
+			  <img width="250" src="https://logolook.net/wp-content/uploads/2021/06/Facebook-Logo-2019.png" alt="Facebook logo" />
+			  <p class="description">Facebook helps you connect and share with the people in your life.</p>
+		  </div>
+		  <div class="right">
+			  <form>
+				  <input type="text" id="email" placeholder="Email address or phone number" />
+				  <input type="password" id="password" placeholder="Password" />
+				  <button type="submit">Log in</button>
+				  <a href="#">Forgotten account?</a>
+			  </form>
+				<button class="signup">Create new account</button>
+		  </div>
+	  </div>
   </body>
 </html>
